@@ -1,0 +1,36 @@
+.article{
+    border: 1px solid $charcoal;
+    padding: .5rem;
+
+
+    &__image img{
+        width: 100%;
+    }
+
+    &__text{
+        line-height: 1.5;
+    }
+
+    &__teacher{
+        margin: .5rem 0;
+    }
+    &__icons{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 1rem;
+        margin-bottom: 0.5rem;
+
+        h5{
+            display: inline-block;
+            margin: 0 .5rem 0 .2rem;
+        }
+        i{
+            display: inline-block;
+
+        }
+        :first-child{
+            margin: 0;
+        }
+    }
+}

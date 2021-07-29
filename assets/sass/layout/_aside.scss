@@ -1,0 +1,69 @@
+.aside{
+    border: 1px solid $sable;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &__image{
+        border-radius: 100px;
+        border: 1px solid $sable;
+        width: 30%;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    &__firsttitle{
+        text-transform: uppercase;
+        margin: .5rem 0;
+    }
+    &__rrss-item{
+        color: $black;
+        margin: 0 .3rem;
+    }
+    &__text{
+        line-height: 1.5;
+
+    }
+
+    &__contenttitle{
+        display: flex;
+        width: 100%;
+        background-color: $charcoal;
+        color: $white;
+        justify-content: center;
+    }
+    &__title{
+        margin: 0;
+        padding: .5rem;
+    }
+
+    &__list{
+        align-self: flex-start;
+        padding: 0 0 0 1rem;
+        list-style: circle;
+    }
+    &__item a{
+        text-decoration: none;
+    }
+}
+
+.tamanosvg{
+    width: 30%;
+}
+
+.etiqueta{
+position: relative;
+animation: mover 1s ease infinite alternate;
+
+}
+
+.tuerca__interna{
+    animation: girar 1s linear infinite;
+    transform-origin: 80%80%; 
+
+}
+

@@ -1,0 +1,14 @@
+.header{
+    &__image{
+        width: 100%;
+        margin-top: 80px;
+    }
+    @include respond-to($bp-md){
+        display: flex;
+        justify-content: center;
+
+        &__image{
+            width: 50%;
+        } 
+    }
+}

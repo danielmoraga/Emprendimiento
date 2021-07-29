@@ -1,0 +1,12 @@
+.main{
+
+    &__courses{
+        border: 1px solid $sable;
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        :first-child{
+            margin-bottom: 0.5rem;
+        }
+    }
+}

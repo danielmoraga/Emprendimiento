@@ -1,0 +1,54 @@
+.footer{
+    background-color: $black;
+    padding: 1rem;
+    color: $white;
+
+    &__contenedor{
+    @include flex-column;
+    justify-content: center;
+ 
+}
+&__item{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1rem;
+}
+&__input{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+&__menu{
+    @include flex-column;
+}
+
+&__btn{
+    margin-top: 1rem;
+
+}
+@include respond-to($bp-md){
+    &__contenedor{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__menu{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__input{
+        width: 40%;
+        margin: 0;
+    }
+
+    &__item{
+        margin: 0 .3rem;
+    }
+    &__btn{
+        margin: 0;
+    }
+
+}
+}

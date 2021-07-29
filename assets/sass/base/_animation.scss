@@ -1,0 +1,19 @@
+@keyframes mover{
+    0%{
+        transform:translateX(120px);
+    }
+ 
+    100%{
+        transform:translateX(0px);
+    }
+}
+
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

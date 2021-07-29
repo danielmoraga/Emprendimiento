@@ -1,0 +1,70 @@
+.navigation{
+    background-color: $black;
+    color: $white;
+    position: fixed;
+    width: 100%;
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        height: 3.5rem;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+    }
+    
+
+    &__item{
+        text-decoration: none;
+        color: $white;
+        margin-left: 1rem;
+        
+    }
+
+    &__item:hover{
+        color:$orange;
+    }
+
+    &__hamburguer{
+        background-color: transparent;
+        border: 0;
+        color: $white;
+        cursor: pointer;
+        display: none;
+    }
+    &__hamburguer:focus{
+        outline: none;
+    }
+
+
+    @include media($bp-md) {
+        &__list{
+            display: none;
+            width: 100%;
+            flex-direction: column;
+        }
+        &__list.show{
+            display: flex;
+        }
+        &__hamburguer{
+            display: block;
+        }
+        &__list li{
+            margin: 1rem 0;
+        }
+    }
+}
+
+
+    
+
